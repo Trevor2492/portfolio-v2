@@ -144,7 +144,7 @@ img {
 }
 .nav__links a {
   font-size: 0.875rem;
-  color: #6e6e8a;
+  color: #88889c;
   transition: color 0.25s ease;
 }
 .nav__links a:hover {
@@ -153,7 +153,7 @@ img {
 .nav__github {
   display: flex;
   align-items: center;
-  color: #6e6e8a !important;
+  color: #88889c !important;
 }
 .nav__github:hover {
   color: #7c6fcd !important;
@@ -171,7 +171,7 @@ img {
   display: block;
   width: 22px;
   height: 2px;
-  background: #6e6e8a;
+  background: #88889c;
   border-radius: 2px;
   transition: all 0.25s ease;
 }
@@ -235,7 +235,7 @@ img {
 .hero__sub {
   max-width: 520px;
   font-size: 1.1rem;
-  color: #6e6e8a;
+  color: #88889c;
   line-height: 1.7;
   margin-bottom: 40px;
 }
@@ -253,7 +253,7 @@ img {
 .hero__stack span {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.75rem;
-  color: #6e6e8a;
+  color: #88889c;
   padding: 4px 10px;
   border: 1px solid #1e1e2e;
   border-radius: 4px;
@@ -268,19 +268,19 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  opacity: 0.7;
+  opacity: 1;
 }
 .hero__scroll-hint span {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #6e6e8a;
+  color: #88889c;
 }
 .hero__scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(#6e6e8a, transparent);
+  background: linear-gradient(#88889c, transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -301,9 +301,14 @@ img {
   background: #16161f;
   border: 1px solid #1e1e2e;
   border-radius: 16px;
-  padding: 48px;
+  padding: 4rem;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 860px) {
+  .featured__card {
+    padding: 1.5rem;
+  }
 }
 .featured__card::before {
   content: "";
@@ -355,7 +360,7 @@ img {
   margin-bottom: 20px;
 }
 .featured__desc {
-  color: #6e6e8a;
+  color: #88889c;
   line-height: 1.75;
   margin-bottom: 24px;
   font-size: 0.95rem;
@@ -366,7 +371,7 @@ img {
 .featured__highlights li {
   position: relative;
   padding-left: 18px;
-  color: #6e6e8a;
+  color: #88889c;
   font-size: 0.9rem;
   margin-bottom: 10px;
   line-height: 1.6;
@@ -464,7 +469,7 @@ img {
   background: #16161f;
   border: 1px solid #1e1e2e;
   border-radius: 16px;
-  padding: 28px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
@@ -514,7 +519,7 @@ img {
 }
 .project-card__desc {
   font-size: 0.875rem;
-  color: #6e6e8a;
+  color: #88889c;
   line-height: 1.65;
   flex: 1;
   margin-bottom: 20px;
@@ -527,7 +532,7 @@ img {
 .project-card__tag {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.7rem;
-  color: #6e6e8a;
+  color: #88889c;
   background: #111118;
   border: 1px solid #1e1e2e;
   padding: 2px 8px;
@@ -555,7 +560,7 @@ img {
   margin-bottom: 16px;
 }
 .contact__sub {
-  color: #6e6e8a;
+  color: #88889c;
   font-size: 1rem;
   max-width: 460px;
   margin: 0 auto 40px;
@@ -570,7 +575,7 @@ img {
 .contact__links a {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.8rem;
-  color: #6e6e8a;
+  color: #88889c;
   letter-spacing: 0.05em;
   transition: color 0.25s ease;
 }
@@ -596,12 +601,12 @@ img {
 }
 .footer__copy {
   font-size: 0.8rem;
-  color: #6e6e8a;
+  color: #88889c;
 }
 .footer__back {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.75rem;
-  color: #6e6e8a;
+  color: #88889c;
   transition: color 0.25s ease;
 }
 .footer__back:hover {
@@ -612,8 +617,7 @@ img {
   padding-top: 64px;
 }
 .project-page__hero {
-  padding: 80px 0 60px;
-  border-bottom: 1px solid #1e1e2e;
+  padding: 2rem 0;
 }
 .project-page__back {
   display: inline-flex;
@@ -621,7 +625,7 @@ img {
   gap: 6px;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.8rem;
-  color: #6e6e8a;
+  color: #88889c;
   margin-bottom: 32px;
   transition: color 0.25s ease;
 }
@@ -651,7 +655,7 @@ img {
 }
 .project-page__sub {
   font-size: 1.1rem;
-  color: #6e6e8a;
+  color: #88889c;
   max-width: 580px;
   line-height: 1.7;
   margin-bottom: 32px;
@@ -675,7 +679,7 @@ img {
   margin-top: 0;
 }
 .project-page__body p {
-  color: #6e6e8a;
+  color: #88889c;
   line-height: 1.8;
   margin-bottom: 16px;
 }
@@ -685,7 +689,7 @@ img {
 .project-page__body ul li {
   position: relative;
   padding-left: 18px;
-  color: #6e6e8a;
+  color: #88889c;
   font-size: 0.95rem;
   margin-bottom: 8px;
 }
@@ -716,7 +720,7 @@ img {
     border-bottom: 1px solid #1e1e2e;
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 32px;
+    padding: 14px 32px;
     gap: 24px;
     transform: translateY(-110%);
     transition: transform 0.25s ease;

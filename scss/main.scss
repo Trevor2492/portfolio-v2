@@ -9,7 +9,7 @@ $accent:      #7c6fcd;
 $accent-dim:  rgba(124, 111, 205, 0.15);
 $accent-glow: rgba(124, 111, 205, 0.25);
 $text:        #e2e2f0;
-$text-muted:  #6e6e8a;
+$text-muted:  #88889c;
 $text-dim:    #3a3a5c;
 $mono:        'JetBrains Mono', monospace;
 $sans:        'Inter', sans-serif;
@@ -294,7 +294,7 @@ img { display: block; max-width: 100%; }
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    opacity: 0.7;
+    opacity: 1;
 
     span {
       font-family: $mono;
@@ -332,10 +332,14 @@ img { display: block; max-width: 100%; }
     background: $bg-card;
     border: 1px solid $border;
     border-radius: $radius-lg;
-    padding: 48px;
+    padding: 4rem;
     position: relative;
     overflow: hidden;
 
+    @media (max-width: 860px) {
+      padding: 1.5rem;
+    }
+    
     &::before {
       content: '';
       position: absolute;
@@ -506,7 +510,7 @@ img { display: block; max-width: 100%; }
   background: $bg-card;
   border: 1px solid $border;
   border-radius: $radius-lg;
-  padding: 28px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   transition: border-color $transition, transform $transition, box-shadow $transition;
@@ -671,8 +675,7 @@ img { display: block; max-width: 100%; }
   padding-top: 64px;
 
   &__hero {
-    padding: 80px 0 60px;
-    border-bottom: 1px solid $border;
+    padding: 2rem 0;
   }
 
   &__back {
@@ -788,7 +791,7 @@ img { display: block; max-width: 100%; }
     border-bottom: 1px solid $border;
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px 32px;
+    padding: 14px 32px;
     gap: 24px;
     transform: translateY(-110%);
     transition: transform $transition;
