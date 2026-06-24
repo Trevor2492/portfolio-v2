@@ -6,13 +6,13 @@
 
 const PROJECTS = [
   {
-    id: 'meal-prep',
-    title: 'Meal Prep App',
+    id: 'meal-planner',
+    title: 'Meal Planner App',
     desc: 'Helps users plan daily meals with a randomized list. Firestore as the database for real-time add/remove of meals.',
     tags: ['React', 'Firebase', 'Firestore'],
     github: 'https://github.com/Trevor2492/meal-prep',
-    live: null,
-    page: 'projects/meal-prep.html',
+    live: 'https://trevor2492.github.io/upgraded-meal-planner/',
+    page: 'projects/meal-planner.html',
   },
   {
     id: 'chat-app',
