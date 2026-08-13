@@ -12,7 +12,7 @@ const PROJECTS = [
     tags: ['React', 'Firebase', 'Firestore'],
     github: 'https://github.com/Trevor2492/meal-prep',
     live: 'https://trevor2492.github.io/upgraded-meal-planner/',
-    page: 'projects/meal-planner.html',
+    page: 'projects/meal-planner',
   },
   {
     id: 'chat-app',
