@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "Personal portfolio site built with vanilla HTML, SCSS, and JavaScript. Hosted on GitHub Pages.",
+  "private": true,
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css",
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "build": "sass scss/main.scss css/main.css --style=compressed --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}
