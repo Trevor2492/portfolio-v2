@@ -12,7 +12,7 @@ const PROJECTS = [
     tags: ['React', 'Firebase', 'Firestore'],
     github: 'https://github.com/Trevor2492/meal-prep',
     live: 'https://trevor2492.github.io/upgraded-meal-planner/',
-    page: 'projects/meal-planner.html',
+    page: 'projects/meal-planner',
   },
   {
     id: 'amazon-price-checker',
@@ -21,7 +21,7 @@ const PROJECTS = [
     tags: ['Node.js', 'Puppeteer', 'CLI'],
     github: 'https://github.com/Trevor2492/amazon-price-checker',
     live: null,
-    page: 'projects/amazon-price-checker.html',
+    page: 'projects/amazon-price-checker',
   },
   {
     id: 'garage-lobster',
@@ -30,7 +30,7 @@ const PROJECTS = [
     tags: ['Next.js', 'Supabase'],
     github: 'https://github.com/Trevor2492/garagelobster',
     live: null,
-    page: 'projects/garage-lobster.html',
+    page: 'projects/garage-lobster',
   },
 ];
 
