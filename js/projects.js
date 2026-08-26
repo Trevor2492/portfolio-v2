@@ -21,7 +21,7 @@ const PROJECTS = [
     tags: ['Node.js', 'Puppeteer', 'CLI'],
     github: 'https://github.com/Trevor2492/amazon-price-checker',
     live: null,
-    page: 'projects/amazon-price-checker.html',
+    page: 'projects/amazon-price-checker',
   },
   {
     id: 'garage-lobster',
@@ -30,7 +30,7 @@ const PROJECTS = [
     tags: ['Next.js', 'Supabase'],
     github: 'https://github.com/Trevor2492/garagelobster',
     live: null,
-    page: 'projects/garage-lobster.html',
+    page: 'projects/garage-lobster',
   },
 ];
 
