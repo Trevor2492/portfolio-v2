@@ -1,7 +1,7 @@
 // ============================================================
 // VARIABLES
 // ============================================================
-$bg:          #0a0a0f;
+$bg:          #1a1a28ff;
 $bg-surface:  #111118;
 $bg-card:     #16161f;
 $border:      #1e1e2e;
@@ -777,6 +777,134 @@ img { display: block; max-width: 100%; }
       border-radius: 4px;
       color: lighten($accent, 15%);
     }
+  }
+}
+
+// ============================================================
+// CONNEXUS SHOWCASE (cx-*)
+// ============================================================
+.cx-intro {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 48px;
+  align-items: center;
+  padding: 24px 0 56px;
+  border-bottom: 1px solid $border;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  &__text p {
+    color: $text-muted;
+    line-height: 1.8;
+
+    + p { margin-top: 16px; }
+
+    strong { color: $text; font-weight: 600; }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 350px;
+    object-fit: contain;
+    justify-self: center;
+    background: $text;
+    padding: 1.5rem;
+    border-radius: $radius;
+  }
+}
+
+.cx-section {
+  padding: 8rem 0;
+  background: $bg;
+
+  // Alternating band tint
+  &.odd { 
+    background: lighten($bg, 4%);
+    border-radius: 2rem;
+    box-shadow: inset 1px 1px 1px 0px #ffffff1a;
+  }
+
+  .cx-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 40px;
+    align-items: center;
+
+    @media (max-width: 860px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  // Alternate: images on the left, text on the right
+  &.odd .cx-inner {
+    grid-template-columns: 1fr 330px;
+
+    .cx-text   { order: 2; }
+    .cx-images { order: 1; }
+
+    @media (max-width: 860px) {
+      grid-template-columns: 1fr;
+
+      .cx-text   { order: 1; }
+      .cx-images { order: 2; }
+    }
+  }
+}
+
+.cx-text {
+  h2 {
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+
+  .btn { margin-top: 12px; }
+}
+
+.cx-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid $border;
+    border-radius: $radius;
+    background: $bg-surface;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  video { max-height: 620px; }
+}
+
+.cx-outro {
+  padding: 48px 0 96px;
+  color: $text-muted;
+  line-height: 1.8;
+
+  a {
+    color: $accent;
+    transition: color $transition;
+
+    &:hover { color: lighten($accent, 15%); }
   }
 }
 
