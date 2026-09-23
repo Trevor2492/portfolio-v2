@@ -21,6 +21,9 @@
         </a>
       </li>
     </ul>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <main class="project-page">
@@ -30,69 +33,218 @@
         <div class="project-page__tags">
           <span class="project-page__tag">Professional</span>
           <span class="project-page__tag">Headless WordPress</span>
+          <span class="project-page__tag">Next.js</span>
           <span class="project-page__tag">React</span>
-          <span class="project-page__tag">PHP</span>
-          <span class="project-page__tag">REST API</span>
+          <span class="project-page__tag">Chart.js</span>
         </div>
-        <h1 class="project-page__title">Connexus Credit Union</h1>
-        <p class="project-page__sub">
-          Full stack development on a headless WordPress platform for one of Wisconsin's
-          largest credit unions — building the digital experience for over 400,000 members.
-        </p>
-        <div class="project-page__links">
-          <a href="https://www.connexuscu.org" target="_blank" rel="noopener" class="btn btn--primary">
-            Visit Live Site &rarr;
-          </a>
-        </div>
+        <h1 class="project-page__title">Connexus — Recent Work</h1>
       </div>
     </div>
 
     <div class="container">
-      <div class="project-page__body">
-        <h2>Overview</h2>
-        <p>
-          Connexus Credit Union is one of the largest credit unions in the United States, serving
-          hundreds of thousands of members. As a contract full stack developer, I worked directly
-          on their public-facing web platform — a headless WordPress architecture where WordPress
-          handles content management and a decoupled React front-end handles rendering.
-        </p>
-
-        <h2>Architecture</h2>
-        <p>
-          The platform uses WordPress as a headless CMS, exposing content through the WP REST API
-          and custom endpoints. The React front-end consumes this API and renders content client-side,
-          giving the marketing team full editorial control while the development team maintains a modern
-          component-based UI layer.
-        </p>
-        <ul>
-          <li>WordPress REST API as the data layer</li>
-          <li>Custom PHP plugins extending core WP functionality</li>
-          <li>ACF (Advanced Custom Fields) for structured content modeling</li>
-          <li>React component library consuming the REST API</li>
-          <li>Custom Gutenberg block extensions for editorial tooling</li>
-        </ul>
-
-        <h2>My Contributions</h2>
-        <ul>
-          <li>Built and maintained reusable React components aligned to the design system</li>
-          <li>Developed custom PHP plugins for business-specific functionality</li>
-          <li>Extended Gutenberg with custom blocks for the content team</li>
-          <li>Implemented performance improvements reducing page load times</li>
-          <li>Worked with compliance and accessibility teams to meet WCAG 2.1 AA standards</li>
-          <li>Collaborated in an agile environment with daily standups and sprint planning</li>
-        </ul>
-
-        <h2>Tech Stack</h2>
-        <ul>
-          <li><code>PHP 8</code> — WordPress backend, custom plugins</li>
-          <li><code>React</code> — decoupled front-end</li>
-          <li><code>Next.js</code> — Powerful server-side rendering capabilities</li>
-          <li><code>WordPress REST API</code> — data layer</li>
-          <li><code>ACF Pro</code> — structured content modeling</li>
-          <li><code>SCSS</code> — component styling</li>
-          <li><code>Git / GitHub</code> — version control and code review</li>
-        </ul>
+      <!-- INTRO -->
+      <div class="cx-intro">
+        <div class="cx-intro__text">
+          <p>
+            Connexus is the 4th largest credit union in Wisconsin serving over 465,000 members.
+            As a member of the marketing team, I work with our UX design team to bring designs
+            to life. Using a <strong>Headless WordPress</strong> environment built with
+            <strong>Next.js</strong>, I ensure accessibility and performance best practices are met.
+            Every feature is built to be responsive on all screen sizes, and optimized for desktop
+            and mobile.
+          </p>
+          <p>
+            This page showcases the work I've done at Connexus over the past ~5 years including
+            interactive calculators, dynamic rate components, and other UI/UX deliverables.
+          </p>
+        </div>
+        <img class="cx-intro__logo" src="img/cxcu_logo.webp" alt="Connexus Credit Union Logo" />
       </div>
+    </div>
+
+    <!-- SHOWCASE — full-bleed alternating bands -->
+
+      <!-- 1 — Dynamic Checking Account Calculator -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Dynamic Checking Account Calculator</h2>
+            <p>Powered by Chart.js to help users visualize potential benefits of a high-yield checking account.</p>
+            <p>Two key calculator views — "National Average comparison" and "Earnings."</p>
+            <a href="https://www.connexuscu.org/accounts/checking#dynamic-product-calculator_column" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/checking calculator 1.png" alt="Dynamic Checking Account Calculator 1" loading="lazy" />
+            <img src="img/checking calculator 2.png" alt="Dynamic Checking Account Calculator 2" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 — Auto Loan Payment Calculator -->
+      <section class="cx-section odd">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Auto Loan Payment Calculator</h2>
+            <p>Custom visual tables and charts to simplify loan comparison for customers.</p>
+            <p>The component loads live rates from the WordPress CMS and updates dynamically based on user inputs.</p>
+            <a href="https://www.connexuscu.org/loans/auto#rates" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/auto loan table.png" alt="Auto Loan Payment Calculator" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 — "Read more" on mobile -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>"Read more" on mobile</h2>
+            <p>Expanding bio sections that keep pages concise on mobile devices while allowing users to dive deeper if desired.</p>
+            <p>Smooth animated open/close and dynamically detects content length for "no-maintenance" set up.</p>
+            <a href="https://www.connexuscu.org/about/leadership#board-of-directors" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <video controls preload="metadata" aria-label="CX bio expanding video">
+              <source src="img/cx-bio_read_more.MP4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 — Mobile Slider Component -->
+      <section class="cx-section odd">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Mobile Card Slider</h2>
+            <p>Built a mobile-first slider component for showcasing featured products on small screens.</p>
+            <p>Uses JavaScript to detect scroll position and updates the "dots" navigation accordingly. Dots can also be tapped to navigate directly to a slide.</p>
+            <a href="https://www.connexuscu.org/#featured-products" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <video controls preload="metadata" aria-label="Mobile slider video">
+              <source src="img/mobile_slider.MP4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 — Promo Cards -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Promo Cards</h2>
+            <p>Built a second promotional system that shows multiple content blocks on a single canvas.</p>
+            <p>Allows for easy updates via CMS and has multiple layout options to fit different use cases.</p>
+            <a href="https://www.connexuscu.org/promotions" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/promo third component.png" alt="Promo Cards" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 — Dynamic Mobile Header -->
+      <section class="cx-section odd">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Dynamic Mobile Header</h2>
+            <p>Animated show/hide header that maximizes screen real estate while keeping key info accessible.</p>
+            <p>Smooth transitions detect scroll direction and position and display the header accordingly.</p>
+            <a href="https://www.connexuscu.org" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <video controls preload="metadata" aria-label="Dynamic mobile header video">
+              <source src="img/dynamic_scroll_header.MP4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 — Deposit Rate Tables Redesign -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Deposit Rate Tables Redesign</h2>
+            <p>Dynamic rate table component that pulls live rates and renders them in a clear, accessible format.</p>
+            <p>Redesigned from the ground up to improve readability and usability on all screen sizes.</p>
+            <a href="https://www.connexuscu.org/rates" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/deposit rate table.png" alt="Deposit Rate Tables Redesign" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 — Perks -->
+      <section class="cx-section odd">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Perks</h2>
+            <p>Highlighting perks and rewards through a simple, visually-rich content block that drives engagement.</p>
+            <p>Content can be updated via CMS and supports multiple layout variants.</p>
+            <a href="https://www.connexuscu.org/loans/auto-refinance#benefits" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/perks.png" alt="Perks" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 — Promo Component -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Promo Component</h2>
+            <p>A flexible promo component designed for featuring time-sensitive offers sitewide.</p>
+            <p>Supports multiple variants with perk-like bullet points, various CTAs, and image/illustration support.</p>
+            <a href="https://www.connexuscu.org/about/contact-us" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/promo component.png" alt="Promo Component" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 — Disclosure UI -->
+      <section class="cx-section odd">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>Disclosure UI</h2>
+            <p>Optimized for readability and legal compliance while staying visually integrated with product pages.</p>
+            <p>Detects content length and adjusts expand/collapse layout accordingly. Also supports anchor linking to superscripts higher up the page.</p>
+            <a href="https://www.connexuscu.org/loans/auto-refinance#disclosures" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/disclosures.png" alt="Disclosure UI" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 11 — FAQs -->
+      <section class="cx-section">
+        <div class="cx-inner">
+          <div class="cx-column cx-text">
+            <h2>FAQs</h2>
+            <p>Animated open/close FAQ section that improves user experience by allowing quick access to common questions and answers.</p>
+            <p>Also supports anchor linking which automatically expands the relevant FAQ when navigated to.</p>
+            <a href="https://www.connexuscu.org/loans/auto-refinance#FAQs" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">See it live &rarr;</a>
+          </div>
+          <div class="cx-column cx-images">
+            <img src="img/FAQs.png" alt="FAQs" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+    <div class="container">
+      <!-- OUTRO -->
+      <p class="cx-outro">
+        These projects are only a few highlights of my work at Connexus. I've worked on hundreds
+        more components, features, enhancements, bugfixes, and optimizations that contribute to a
+        seamless user experience. Check out the website at
+        <a href="https://www.connexuscu.org" target="_blank" rel="noopener">connexuscu.org</a>
+        to see more of my work.
+      </p>
     </div>
   </main>
 
