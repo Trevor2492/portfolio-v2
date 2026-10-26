@@ -2,6 +2,20 @@
  * main.js — nav scroll behavior, burger menu, scroll animations, footer year
  */
 
+// ── Clean URL (strip .html / index.html from address bar) ────
+const cleanPath = location.pathname.replace(/(\/index)?\.html$/, '') || '/';
+if (cleanPath !== location.pathname) {
+  history.replaceState(null, '', cleanPath + location.search + location.hash);
+}
+
+// ── Hero video (half speed; poster only for reduced motion) ──
+const heroVideo = document.getElementById('heroVideo');
+if (heroVideo && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroVideo.playbackRate = 0.5;
+  heroVideo.defaultPlaybackRate = 0.5;
+  heroVideo.play().catch(() => {});
+}
+
 // ── Footer year ──────────────────────────────────────────────
 const yearEl = document.getElementById('footerYear');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

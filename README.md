@@ -32,13 +32,12 @@ This compiles `scss/main.scss` → `css/main.css` on every save.
 
 ### 4. Serve locally
 
-Use any static file server. Recommended options:
+Internal links use clean URLs (no `.html`), so use a server that resolves them like GitHub Pages does:
 
-**VS Code Live Server extension** — right-click `index.html` → Open with Live Server.
-
-**Or via npx:**
 ```bash
 npx serve .
 ```
 
 Then visit `http://localhost:3000`.
+
+> VS Code Live Server doesn't support clean URLs, so links between pages will 404 there.
